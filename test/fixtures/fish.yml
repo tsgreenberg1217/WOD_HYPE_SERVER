@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  species: MyString
+  user_id: 1
+  trip_id: 1
+  weight: 1
+
+two:
+  species: MyString
+  user_id: 1
+  trip_id: 1
+  weight: 1
