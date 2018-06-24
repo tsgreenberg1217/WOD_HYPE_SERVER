@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  rounds: 
+  reps: 
+  time: 2018-06-23 21:34:33
+  date: 2018-06-23
+  notes: MyString
+
+two:
+  name: MyString
+  rounds: 
+  reps: 
+  time: 2018-06-23 21:34:33
+  date: 2018-06-23
+  notes: MyString

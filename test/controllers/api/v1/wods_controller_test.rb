@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class FishTest < ActiveSupport::TestCase
+class Api::V1::WodsControllerTest < ActionDispatch::IntegrationTest
   # test "the truth" do
   #   assert true
   # end
