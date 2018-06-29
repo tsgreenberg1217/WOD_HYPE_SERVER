@@ -11,7 +11,7 @@ class Api::V1::WodsController < ApplicationController
   end
 
   def index
-    render json Wod.all
+    render json: Wod.all
   end
 
 end
