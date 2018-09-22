@@ -1,13 +1,14 @@
 class CreateWods < ActiveRecord::Migration[5.1]
   def change
     create_table :wods do |t|
+      t.integer :cat
       t.string :name
       t.integer :rounds
       t.integer :reps
-      t.time :time
-      t.datetime :date
+      t.integer :time
+      t.bigint :date
       t.string :notes
-
+      t.integer :weight
       t.timestamps
     end
   end
