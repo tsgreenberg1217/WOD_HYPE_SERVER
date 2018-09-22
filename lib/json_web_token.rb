@@ -13,3 +13,4 @@ class JsonWebToken
      nil
    end
  end
+end
