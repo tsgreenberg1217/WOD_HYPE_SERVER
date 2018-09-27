@@ -1,9 +1,9 @@
 require 'pry'
 class Api::V1::WodsController < ApplicationController
+  before_action :authenticate_request
 
   def create
-    # binding.pry
-    wod = Wod.create(
+      current_user.wods.create(
       cat: params[:cat],
       name: params[:name],
       rounds: params[:rounds],
@@ -13,11 +13,12 @@ class Api::V1::WodsController < ApplicationController
       weight: params[:weight],
       notes: params[:notes])
 
-      render json: wod
+      render json: current_user.wods.last
   end
 
   def index
-    render json: Wod.order(date: :desc).limit(10)
+    # render json: current_user.wods.order(date: :desc).limit(10)
+    render json: Wod.all
   end
 
   def show
